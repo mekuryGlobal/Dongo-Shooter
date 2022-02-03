@@ -14,20 +14,18 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void OnResumePressed()
+   void OnResumePressed()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            
             pauseMenu.SetActive(true);
             Time.timeScale = 0;
         }

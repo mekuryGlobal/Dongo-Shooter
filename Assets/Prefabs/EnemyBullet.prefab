@@ -63,6 +63,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 4600508203680963463, guid: 35126730abe802343a1704a0ecb7aacf, type: 3}
+      propertyPath: damage
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804997164948111577, guid: 35126730abe802343a1704a0ecb7aacf, type: 3}
+      propertyPath: delay
+      value: 55
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4790536788655204342, guid: 35126730abe802343a1704a0ecb7aacf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 35126730abe802343a1704a0ecb7aacf, type: 3}

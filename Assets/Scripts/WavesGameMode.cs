@@ -26,7 +26,7 @@ public class WavesGameMode : MonoBehaviour
     {
         if (playerLife.amount <= 0)
         {
-            SceneManager.LoadScene("LoseScreen");
+            SceneManager.LoadScene("LoseScreen1");
         }
     }
     
@@ -34,7 +34,7 @@ public class WavesGameMode : MonoBehaviour
     {
         if (playerBaseLife.amount <= 0)
         {
-            SceneManager.LoadScene("LoseScreen");
+            SceneManager.LoadScene("LoseScreen1");
         }
     }
 }

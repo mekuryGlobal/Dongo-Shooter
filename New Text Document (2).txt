@@ -1,0 +1,7 @@
+i started up a stratis node that acted as an api provider for stratis unity sdk
+
+i used the latest release of the fulll node, stratis full node version 1.1.1.1
+
+dotnet exec "C:\Users\PatMekury\Documents\StratisFullNode\src\Stratis.StraxD\bin\Release\netcoreapp3.1\Stratis.StraxD.dll"  -txindex=1 -addressindex=1 -testnet -unityapi_enable=true -unityapi_apiuri=http://0.0.0.0
+
+the node was run from the StraD directory, i used the test net and im using the unityapi feature

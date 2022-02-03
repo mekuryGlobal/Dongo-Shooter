@@ -5,7 +5,7 @@ public class PlayerBulletsUI : MonoBehaviour
 {
     TMP_Text text;
 
-    public PlayerShooting targetShooting;
+    public PlayerShooting2 targetShooting;
 
     void Awake()
     {

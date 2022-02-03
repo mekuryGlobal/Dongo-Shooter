@@ -1,0 +1,12 @@
+dotnet run -txindex=1 -addressindex=1 -testnet -unityapi_enable=true
+cd C:\Users\PatMekury\Documents\StratisFullNode\src\Stratis.CirrusD
+
+localhost:44336/swagger/index.html
+
+C:\Users\PatMekury\Documents\StratisFullNode\src
+
+dotnet build --configuration Release
+
+dotnet exec "C:\Users\PatMekury\Documents\StratisFullNode\src\Stratis.StraxD\bin\Release\netcoreapp3.1\Stratis.StraxD.dll"  -txindex=1 -addressindex=1 -testnet -unityapi_enable=true -unityapi_apiuri=http://0.0.0.0
+
+i got the latest stratis sdk
