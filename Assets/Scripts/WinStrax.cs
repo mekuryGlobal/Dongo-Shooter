@@ -10,7 +10,10 @@ using UnityEngine.UI;
 
 public class WinStrax : MonoBehaviour
 {
-    public Button SendTx_Button;
+    
+    public Button InitializeApi_Button, CopyAddress_Button, RefreshBalance_Button, SendTx_Button;
+    public Button PopupPanelOk_Button;
+
     private StratisUnityManager stratisUnityManager;
     private string Mnemonic, MainAddress;
     public GameObject PopupPanel;
@@ -26,7 +29,14 @@ public class WinStrax : MonoBehaviour
     {
         PopupPanel.SetActive(false);
 
+       
+        InitializeApi_Button.onClick.AddListener(InitializeApi_ButtonCall);
+        CopyAddress_Button.onClick.AddListener(CopyAddress_ButtonCall);
+        RefreshBalance_Button.onClick.AddListener(RefreshBalance_ButtonCall);
         SendTx_Button.onClick.AddListener(() => this.StartCoroutine(SendTx_ButtonCall()));
+        PopupPanelOk_Button.onClick.AddListener(() => PopupPanel.SetActive(false));
+
+        
         
     }
 
